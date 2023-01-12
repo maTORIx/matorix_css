@@ -11,7 +11,7 @@ div.user .icon {
     justify-content: center;
     width: 32px;
     height: 32px;
-    border: 2px solid #333;
+    border: 2px solid var(--main-border-color);
     border-radius: 50%;
     user-select: none;
 }

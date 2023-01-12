@@ -1,4 +1,15 @@
 :root {
-    --main-bg-color: #eee;
+    --main-bg-color: #f5f6f2;
     --main-text-color: #000;
+    --main-border-color: #333;
+    --link-color: blue
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-bg-color: #000;
+        --main-text-color: #f5f6f2;
+        --main-border-color: #ddd;
+        --link-color: #a2a2ff
+    }
 }
