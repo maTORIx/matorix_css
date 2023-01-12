@@ -1,0 +1,53 @@
+p {
+    font-size: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 5px 0;
+}
+
+p.left {
+    text-align: left;
+}
+
+p.justify {
+    text-align: justify;
+}
+
+p.right {
+    text-align: right;
+}
+
+small {
+    width: 100%;
+    display: block;
+    font-family: "DotGothic16", sans-serif;
+    font-size: .5em;
+    text-align: right;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+
+th {
+    font-weight: 400;
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    padding: 2px;
+}
+
+th {
+    padding: 2px 2px 4px 2px;
+}
+
+td {
+    padding: 2px;
+}
+
+table.center {
+    text-align: center;
+}

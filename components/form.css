@@ -1,0 +1,150 @@
+form {
+    width: 100%;
+}
+
+form label {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+form input {
+    width: 100%;
+    font-size: 1.1em;
+    border: 2px solid #333;
+    border-radius: 3px;
+    margin: 5px 0 20px 0;
+    padding: 8px;
+}
+
+form input.center {
+    text-align: center;
+}
+
+form input:focus {
+    outline: none;
+    animation: border-color-change .1s ease 0s 3 normal none;
+}
+
+form input.error {
+    border-color: #b96363;
+}
+
+form button {
+    width: 100%;
+    height: 3em;
+    border: 2px solid #333;
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    font-family: "Material Symbols Outlined", "Roboto", "BIZ UDPGothic", sans-serif;
+    font-size: 1.3em;
+}
+
+form button:hover {
+    animation: color-change .1s ease 0s 3 none;
+}
+
+form a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+form input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    margin-bottom: 25px;
+}
+
+form input[type="checkbox"] + label::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #333;
+    transition: .3s;
+    margin-right: 8px;
+    top: 0.3em;
+}
+
+form input[type="checkbox"]:checked + label::before {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: translate(0px, -5px) rotate(45deg) scaleX(0.5);
+}
+
+form input[type="checkbox"] + label:hover {
+    animation: opacity-change .1s ease 0s 2 normal none;
+}
+
+form input[type="radio"] {
+    width: 0;
+    height: 0;
+}
+
+form input[type="radio"] + label::before {
+    position: relative;
+    background-color: transparent;
+    content: "";
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    cursor: pointer;
+    transition: .3s;
+    top: 0.3em;
+    margin-right: 5px;
+}
+
+form input[type="radio"]:checked + label::before {
+    background-color: black;
+    box-shadow: inset 0 0 0 4px transparent;
+}
+
+form input[type="radio"] + label {
+    margin-right: 10px;
+}
+
+form fieldset {
+    padding: 0;
+    border: 0;
+    margin: 10px 0;
+}
+
+form fieldset legend {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+form fieldset label {
+    font-size: .9em;
+}
+
+form .long-description {
+    max-height: 20vh;
+    overflow-y: scroll;
+    display: block;
+    text-align: justify;
+    padding: 1em;
+    border: 1px solid #333;
+    margin: 10px 0;
+    font-size: 0.6em;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    resize: vertical;
+    border: 1px solid #333;
+    padding: 0.5em;
+}
+
+form textarea:focus {
+    outline: none;
+    animation: border-color-change .1s ease 0s 3 normal none;
+}

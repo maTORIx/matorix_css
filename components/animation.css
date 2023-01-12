@@ -1,0 +1,53 @@
+@keyframes fadein {
+   0% {
+    opacity: 0;
+   } 
+   100% {
+    opacity: 1;
+   }
+}
+
+@keyframes opacity-change {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes border-color-change {
+    0% {
+        border-color: black;
+    }
+    50% {
+        border-color: white;
+    }
+    100% {
+        border-color: black;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: black;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}

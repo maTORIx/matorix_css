@@ -1,0 +1,17 @@
+.portrait {
+    width: min(100%, 700px);
+    margin: 0 auto;
+}
+
+div.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+}
+
+div.space {
+    width: 100%;
+    height: 15vw;
+}
