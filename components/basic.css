@@ -1,6 +1,6 @@
 p {
     font-size: 1em;
-    text-align: justify;
+    text-align: left;
     line-height: 1.5em;
     margin: 5px 0 8px 0;
 }
@@ -50,4 +50,22 @@ td {
 
 table.center {
     text-align: center;
+}
+
+code {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.9em;
+}
+
+code.block {
+    display: block;
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.9em;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
 }

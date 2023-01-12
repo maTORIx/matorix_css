@@ -8,15 +8,18 @@
 }
 
 .fadein-quick {
+    opacity: 0;
     animation: fadein 0.3s ease 0s 1 normal forwards;
 }
 
 .fadein {
+    opacity: 0;
     animation: fadein 0.5s ease 0s 1 normal forwards;
 }
 
 .fadein-slow {
-    animation: fadein 0.5s ease 0.5s 1 normal forwards;
+    opacity: 0;
+    animation: fadein 0.5s ease 1s 1 normal forwards;
 }
 
 @keyframes opacity-change {
