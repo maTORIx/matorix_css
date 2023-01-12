@@ -1,0 +1,25 @@
+div.user {
+    max-width: max(200px, 40vw);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+div.user .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+div.user .name {
+    font-size: 1rem;
+    max-width: 20rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 10px;
+}

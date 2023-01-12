@@ -1,0 +1,28 @@
+section.topbar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #333;
+}
+
+section.topbar div.leftside {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+section.topbar div.leftside h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+section.topbar div.rightside {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
