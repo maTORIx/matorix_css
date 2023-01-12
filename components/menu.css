@@ -1,0 +1,31 @@
+ul.menu {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+
+ul.menu li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 2px solid var(--main-border-color);
+    padding: 5px 10px;
+    font-size: 1.1em;
+}
+
+ul.menu li:last-child {
+    border-bottom: none;
+}
+
+ul.menu li::marker {
+    display: none;
+}
+
+ul.menu li span {
+    margin-right: 8px;
+}
+
+ul.menu li:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+}
