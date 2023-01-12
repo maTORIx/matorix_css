@@ -1,0 +1,18 @@
+.dropdown-button + .dropdown {
+    display: none;
+}
+
+.dropdown-button + .dropdown.opened {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: auto;
+    height: auto;
+    border: 2px solid var(--main-border-color);
+}
+
+.dropdown-button + .dropdown.align-right {
+    right: 1em;
+    left: inherit;
+}
