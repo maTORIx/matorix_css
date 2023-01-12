@@ -56,6 +56,7 @@ form a {
 input[type="checkbox"] {
     width: 0;
     height: 0;
+    transform: scale(0);
     margin-bottom: 25px;
 }
 
@@ -85,6 +86,7 @@ input[type="checkbox"] + label:hover {
 input[type="radio"] {
     width: 0;
     height: 0;
+    transform: scale(0);
 }
 
 input[type="radio"] + label::before {
