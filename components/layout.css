@@ -6,6 +6,7 @@
 div.center {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     width: 100%;
     min-height: 100%;
@@ -14,4 +15,32 @@ div.center {
 div.space {
     width: 100%;
     height: 15vw;
+}
+
+section.slidelike {
+    width: 100%;
+    height: 90vh;
+    height: 90dvh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.slidelike h1 {
+    font-weight: 900;
+}
+
+@keyframes to-small {
+    0% {
+        height: 90vh;
+        height: 90dvh;
+    }
+    100% {
+        height: max(30vh, 400px);
+    }
+}
+
+section.slidelike.be-small {
+    animation: to-small 1s ease 1s 1 normal forwards;
 }
