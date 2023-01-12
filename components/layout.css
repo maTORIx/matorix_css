@@ -43,3 +43,7 @@ section.slidelike h1 {
 section.slidelike.be-small {
     animation: to-small 1s ease 1s 1 normal forwards;
 }
+
+.w100 {
+    width: 100%;
+}
