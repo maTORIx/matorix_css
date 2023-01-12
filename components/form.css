@@ -2,12 +2,12 @@ form {
     width: 100%;
 }
 
-form label {
+label {
     font-size: 1.1em;
     margin: 10px 0;
 }
 
-form input {
+input {
     width: 100%;
     font-size: 1.1em;
     border: 2px solid var(--main-border-color);
@@ -18,16 +18,16 @@ form input {
     color: var(--main-text-color);
 }
 
-form input.center {
+input.center {
     text-align: center;
 }
 
-form input:focus {
+input:focus {
     outline: none;
     animation: border-color-change .1s ease 0s 3 normal none;
 }
 
-form input.error {
+input.error {
     border-color: #b96363;
 }
 
@@ -53,13 +53,13 @@ form a {
     margin: 10px 0;
 }
 
-form input[type="checkbox"] {
+input[type="checkbox"] {
     width: 0;
     height: 0;
     margin-bottom: 25px;
 }
 
-form input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before {
     content: "";
     position: relative;
     display: inline-block;
@@ -72,22 +72,22 @@ form input[type="checkbox"] + label::before {
     top: 0.3em;
 }
 
-form input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label::before {
     border-top-color: transparent;
     border-left-color: transparent;
     transform: translate(0px, -5px) rotate(45deg) scaleX(0.5);
 }
 
-form input[type="checkbox"] + label:hover {
+input[type="checkbox"] + label:hover {
     animation: opacity-change .1s ease 0s 2 normal none;
 }
 
-form input[type="radio"] {
+input[type="radio"] {
     width: 0;
     height: 0;
 }
 
-form input[type="radio"] + label::before {
+input[type="radio"] + label::before {
     position: relative;
     background-color: transparent;
     content: "";
@@ -102,27 +102,27 @@ form input[type="radio"] + label::before {
     margin-right: 5px;
 }
 
-form input[type="radio"]:checked + label::before {
+input[type="radio"]:checked + label::before {
     background-color: var(--main-text-color);
     box-shadow: inset 0 0 0 4px transparent;
 }
 
-form input[type="radio"] + label {
+input[type="radio"] + label {
     margin-right: 10px;
 }
 
-form fieldset {
+fieldset {
     padding: 0;
     border: 0;
     margin: 10px 0;
 }
 
-form fieldset legend {
+fieldset legend {
     font-size: 1.1em;
     margin: 10px 0;
 }
 
-form fieldset label {
+fieldset label {
     font-size: .9em;
 }
 
@@ -137,7 +137,7 @@ form .long-description {
     font-size: 0.6em;
 }
 
-form textarea {
+textarea {
     width: 100%;
     max-width: 100%;
     margin: 10px 0;
@@ -148,7 +148,7 @@ form textarea {
     color: var(--main-text-color);
 }
 
-form textarea:focus {
+textarea:focus {
     outline: none;
     animation: border-color-change .1s ease 0s 3 normal none;
 }
