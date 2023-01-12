@@ -11,6 +11,7 @@ ul.menu li {
     border-bottom: 2px solid var(--main-border-color);
     padding: 5px 10px;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
 ul.menu li:last-child {
