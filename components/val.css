@@ -2,7 +2,8 @@
     --main-bg-color: #f5f6f2;
     --main-text-color: #000;
     --main-border-color: #333;
-    --link-color: blue
+    --link-color: blue;
+    --green-color: green;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -10,6 +11,7 @@
         --main-bg-color: #000;
         --main-text-color: #f5f6f2;
         --main-border-color: #ddd;
-        --link-color: #a2a2ff
+        --link-color: #a2a2ff;
+        --green-color: green;
     }
 }

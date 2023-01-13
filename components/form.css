@@ -53,7 +53,8 @@ form a {
     margin: 10px 0;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]:not(.toggle) {
+    margin-right: 8px;
     position: relative;
     appearance: none;
     display: inline-block;
@@ -61,12 +62,11 @@ input[type="checkbox"] {
     border: 2px solid var(--main-border-color);
     width: 1.4em;
     height: 1.4em;
-    transition: 0.3s;
     top: 0.3em;
     animation: none;
 }
 
-input[type="checkbox"]::before {
+input[type="checkbox"]:not(.toggle)::before {
     content: "";
     position: absolute;
     left: 0;
@@ -79,12 +79,51 @@ input[type="checkbox"]::before {
     border-top-color: transparent;
     border-left-color: transparent;
     transform: translate(2px, -9px) rotate(45deg) scaleX(0.5);
-    transition: 0.3s;
+    transition: opacity 0.3s cubic-bezier(0.2, 1, 1, 1);
 }
 
 
-input[type="checkbox"]:checked:before {
+input[type="checkbox"]:not(.toggle):checked:before {
     opacity: 1;
+}
+
+input[type="checkbox"].toggle {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    appearance: none;
+    width: 3em;
+    height: 1.4em;
+    background-color: var(--main-text-color);
+    border-radius: 0.7em;
+    border: 2px solid var(--main-border-color);
+    margin-right: 8px;
+    vertical-align: middle;
+    top: 0.3em;
+    animation: none;
+    transition: background-color 0.2s cubic-bezier(0.2, 1, 1, 1);
+}
+
+input[type="checkbox"].toggle::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 1.4em;
+    height: 1.4em;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    animation: none;
+    transition: transform 0.3s;
+    border: 2px solid var(--main-border-color);
+}
+
+input[type="checkbox"].toggle:checked::before {
+    transform: translateX(1.6em);
+}
+
+input[type="checkbox"].toggle:checked {
+    background-color: var(--green-color);
 }
 
 input[type="radio"] {
@@ -98,7 +137,7 @@ input[type="radio"] {
     width: 1.4em;
     height: 1.4em;
     cursor: pointer;
-    transition: .3s;
+    transition: background-color 0.3s cubic-bezier(0.2, 1, 1, 1);
     top: 0.3em;
     margin-right: 5px;
     animation: none;
