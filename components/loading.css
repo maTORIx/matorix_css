@@ -1,0 +1,10 @@
+.loading {
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 0.3em solid var(--main-border-color);
+    border-right-color: transparent;
+    vertical-align: middle;
+    animation: rotate 0.75s linear 0s infinite normal forwards;
+    border-radius: 50%;
+}

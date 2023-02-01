@@ -23,7 +23,10 @@
             <div class="dropdown align-right">
                 <ul class="menu">
                     <li><span class="material-symbols-outlined">home</span> Home</li>
-                    <li><span class="material-symbols-outlined">settings</span> Settings</li>
+                    <li class="modal-button"><span class="material-symbols-outlined">settings</span> Settings</li>
+                    <div class="modal">
+                        <h2>Settings</h2>
+                    </div>
                     <li><span class="material-symbols-outlined">sync</span> Sync</li>
                     <li><span class="material-symbols-outlined">shopping_cart_checkout</span> Cart</li>
                 </ul>
@@ -32,52 +35,87 @@
     </section>
     <div class="portrait">
 
-    <section class="slidelike be-small">
-        <h1>matorix css</h1>
-        <h2>Custom CSS Design Kit</h2>
-    </section>
-    <h2>概要</h2>
-    <p>matorix cssは <a href="http://twitter.com/matorixmatrix">@matorixmatrix</a>によって作成された、カスタムのCSSセットです。白と黒をベースとしたシンプルなデザインを目指して作成しています。</p>
-    <p>著作権はcc0です。ご自由に利用ください。</p>
-    <p>なお、このCSSはmatorixmatrixによる個人利用を主な目的として作成しています。サポートや説明などは特にないため、ご注意ください。</p>
-    <p>このキットではCSSのベース部分を統一し、綺麗にすることを最大の目的としています。このCSSを読み込むだけでもWebサイトはある程度綺麗になるようにしています。</p>
-    <h2>利用方法</h2>
-    <p>下記のhtmlをヘッダーに埋め込んでください</p>
-    <code class="block">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://matorix.github.io/matorix_css/style.css&quot;&gt;</code>
+        <section class="slidelike be-small">
+            <h1>matorix css</h1>
+            <h2>Custom CSS Design Kit</h2>
+        </section>
+        <h2>概要</h2>
+        <p>matorix cssは <a
+                href="http://twitter.com/matorixmatrix">@matorixmatrix</a>によって作成された、カスタムのCSSセットです。白と黒をベースとしたシンプルなデザインを目指して作成しています。
+        </p>
+        <p>著作権はcc0です。ご自由に利用ください。</p>
+        <p>なお、このCSSはmatorixmatrixによる個人利用を主な目的として作成しています。サポートや説明などは特にないため、ご注意ください。</p>
+        <p>このキットではCSSのベース部分を統一し、綺麗にすることを最大の目的としています。このCSSを読み込むだけでもWebサイトはある程度綺麗になるようにしています。</p>
+        <h2>利用方法</h2>
+        <p>下記のhtmlをヘッダーに埋め込んでください</p>
+        <code
+            class="block">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://matorix.github.io/matorix_css/style.css&quot;&gt;</code>
 
-    <h2>Samples</h2>
-    <a href="./form.html">Form sample</a>
+        <h2>Samples</h2>
+        <section>
+            <h3>Form</h3>
+            <div>
+            <label for="text">Input</label>
+            <input type="text" id="text" placeholder="Aa">
+            </div>
+            <div>
+                <input type="checkbox" name="toggle" id="toggle" class="toggle">
+                <label for="toggle">Toggle</label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">Checkbox</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" id="radio1" value="radio1">
+                <label for="radio1">Radio1</label>
+                <input type="radio" name="radio" id="radio2" value="radio2">
+                <label for="radio2">Radio2</label>
+            </div>
+            <div>
+                <label for="textarea">Textarea</label>
+                <textarea name="textarea" id="textarea"></textarea>
+            </div>
+            <button>send</button>
+        </section>
+        <section>
+            <h3>Loading</h3>
+            <p>
+                <span class="loading"></span>
+                Loading...
+            </p>
+        </section>
 
-    <h2>Table sample</h2>
-    <table class="center">
-        <tr>
-            <th>ABC</th>
-            <th>DEF</th>
-            <th>GHI</th>
-            <th>JKL</th>
-        </tr>
-        <tr>
-            <td>MNO</td>
-            <td>PQR</td>
-            <td>STU</td>
-            <td>VWX</td>
-        </tr>
-        <tr>
-            <td>MNO</td>
-            <td>PQR</td>
-            <td>STU</td>
-            <td>VWX</td>
-        </tr>
-        <tr>
-            <td>MNO</td>
-            <td>PQR</td>
-            <td>STU</td>
-            <td>VWX</td>
-        </tr>
-    </table>
-    <footer>
-        <small>© 2022 Takumi Jonen</small>
-    </footer>
+        <h3>Table sample</h3>
+        <table class="center">
+            <tr>
+                <th>ABC</th>
+                <th>DEF</th>
+                <th>GHI</th>
+                <th>JKL</th>
+            </tr>
+            <tr>
+                <td>MNO</td>
+                <td>PQR</td>
+                <td>STU</td>
+                <td>VWX</td>
+            </tr>
+            <tr>
+                <td>MNO</td>
+                <td>PQR</td>
+                <td>STU</td>
+                <td>VWX</td>
+            </tr>
+            <tr>
+                <td>MNO</td>
+                <td>PQR</td>
+                <td>STU</td>
+                <td>VWX</td>
+            </tr>
+        </table>
+        <footer>
+            <small>© 2022 Takumi Jonen</small>
+        </footer>
     </div>
 </body>
 

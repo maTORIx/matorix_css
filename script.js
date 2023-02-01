@@ -1,9 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".dropdown-button").forEach(element => {
+    document.querySelectorAll(".dropdown-button, .modal-button").forEach(element => {
         let modal = element.nextElementSibling
-        console.log(modal)
         element.addEventListener("click", () => {
-            console.log(element)
             toggleClass(modal, "opened")
         })
     });
