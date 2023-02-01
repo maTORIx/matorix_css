@@ -1,5 +1,5 @@
 section.topbar {
-    position: fixed;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +21,7 @@ section.topbar div.leftside h1 {
     margin: 0;
     font-size: 1.5em;
 }
+
 section.topbar div.rightside {
     display: flex;
     justify-content: right;
