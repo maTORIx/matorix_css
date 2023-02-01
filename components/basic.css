@@ -1,6 +1,5 @@
 body {
     font-family: "Roboto", "Noto Sans JP", sans-serif;
-    padding: 1em;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
 }
