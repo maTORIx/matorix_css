@@ -5,7 +5,6 @@ form {
 label {
     display: inline-block;
     font-size: 1.1em;
-    margin: 1em 0 0.3em;
 }
 
 input {
@@ -49,7 +48,7 @@ input[type="checkbox"]:not(.toggle) {
     border: 2px solid var(--main-border-color);
     width: 1.4em;
     height: 1.4em;
-    top: 0.3em;
+    top: 0.1em;
     animation: none;
 }
 
@@ -86,7 +85,7 @@ input[type="checkbox"].toggle {
     border: 2px solid var(--main-border-color);
     margin-right: 8px;
     vertical-align: middle;
-    top: 0.3em;
+    top: 0.1em;
     animation: none;
     transition: background-color 0.2s cubic-bezier(0.2, 1, 1, 1);
 }
@@ -125,7 +124,7 @@ input[type="radio"] {
     height: 1.4em;
     cursor: pointer;
     transition: background-color 0.3s cubic-bezier(0.2, 1, 1, 1);
-    top: 0.3em;
+    top: 0.35em;
     margin-right: 5px;
     animation: none;
     margin: 0;
@@ -145,7 +144,6 @@ fieldset {
 
 fieldset legend {
     font-size: 1.1em;
-    margin: 10px 0;
 }
 
 form .long-description {
@@ -174,4 +172,8 @@ textarea {
 textarea:focus {
     outline: none;
     animation: border-color-change .1s ease 0s 3 normal none;
+}
+
+input + label, textarea + label, fieldset + label, div:has(> input) + label, div:has(>textarea) + label {
+    margin-top: 1em;
 }

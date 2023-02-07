@@ -96,10 +96,11 @@ button:hover {
 
 ::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
     background-color: var(--main-bg-color);
+    border: none;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-text-color);
-    border-radius: 4px;
 }
