@@ -1,0 +1,41 @@
+.itemlist {
+    display: block;
+    background-color: var(--main-bg-color);
+}
+
+.itemlist .item {
+    padding: 0.5em 1em 0.3em 0.5em;
+}
+
+.itemlist .item .name {
+    font-size: 1em;
+    display: block;
+    text-align: left;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.itemlist .item .data {
+    font-size: 0.5em;
+    margin: 0;
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin: 0px;
+}
+
+.itemlist .item.selected {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+}
+
+.itemlist .separator {
+    background-color: var(--sub-bg-color);
+    padding: 0 0.5em;
+    font-size: 0.8em;
+    margin-top: 1em;
+}
+
