@@ -113,4 +113,6 @@ button:hover {
 
 span.icon {
     font-family: "Material Symbols Outlined", sans-serif;
+    user-select: none;
+    cursor: pointer;
 }
